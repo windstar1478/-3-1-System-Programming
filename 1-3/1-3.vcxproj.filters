@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="kw2022202094_cli.c">
+    <ClCompile Include="cli.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
