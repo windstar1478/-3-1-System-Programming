@@ -225,7 +225,7 @@ int main(int argc, char* argv[]) {
 			return 1; //terminate the program (error)
 		}
 		else {
-			snprintf(buffer, sizeof(buffer), "RNFR     %s\nRNTO   %s\n", argv[2], argv[3]); //format the command and store it in buffer
+			snprintf(buffer, sizeof(buffer), "RNFR %s\nRNTO %s\n", argv[2], argv[3]); //format the command and store it in buffer
 			write(1, buffer, strlen(buffer)); //write the command to stdout
 			return 0; //terminate the program
 		}
