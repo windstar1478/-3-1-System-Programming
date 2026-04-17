@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////
 void print_error(const char* message) { // function to print error message to stderr
 	write(2, message, strlen(message)); // write the error message to stderr (file descriptor 2)
-} 
+}
 ///////////////////////////////////////////////////////////////////////////////////////
 // main																				 //
 // ==================================================================================//
@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
 		print_error("Error: command is required\n"); // write error message to stdout
 		return 1; // terminate the program (error)
 	}
-	else if (strcmp(argv[1], "ls") == 0) { 
+	else if (strcmp(argv[1], "ls") == 0) {
 		if (argc == 2) { // if there is only "ls"
 			write(1, "NLST\n", strlen("NLST\n")); // write NLST command to stdout
 			return 0; // terminate the program
@@ -84,7 +84,7 @@ int main(int argc, char* argv[]) {
 			return 1; // terminate the program (error)
 		}
 	}
-	else if (strcmp(argv[1], "dir") == 0) { 
+	else if (strcmp(argv[1], "dir") == 0) {
 		if (argc == 2) { // if there is only "dir"
 			write(1, "LIST\n", strlen("LIST\n")); // write LIST command to stdout
 			return 0; // terminate the program
@@ -269,7 +269,7 @@ int main(int argc, char* argv[]) {
 			write(1, "\n", 1); //write newline to stdout	
 			return 0; //terminate the program
 		}
-		}
+	}
 
 	else {
 		print_error("Error: unknown command\n"); //write error message to stdout
